@@ -22,6 +22,7 @@ class Jobs extends Component {
     searchInput: '',
     employmentTypeList: [],
     selectedSalary: '',
+    location: [],
   }
 
   componentDidMount() {
@@ -29,11 +30,16 @@ class Jobs extends Component {
   }
 
   getApiJobs = async () => {
-    const {searchInput, employmentTypeList, selectedSalary} = this.state
+    const {
+      searchInput,
+      employmentTypeList,
+      selectedSalary,
+      location,
+    } = this.state
     this.setState({status: apiConstants.loading})
     const jwtToken = Cookies.get('jwt_token')
     console.log(jwtToken)
-    const url = `https://apis.ccbp.in/jobs?employment_type=${employmentTypeList}&search=${searchInput}&minimum_package=${selectedSalary}`
+    const url = `https://apis.ccbp.in/jobs?employment_type=${employmentTypeList}&search=${searchInput}&minimum_package=${selectedSalary}&location=${location}`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -79,6 +85,18 @@ class Jobs extends Component {
     }, this.getApiJobs)
   }
 
+  updateLocation = value => {
+    console.log(value)
+    this.setState(prevState => {
+      const isExist = prevState.location.includes(value)
+      return {
+        location: isExist
+          ? prevState.location.filter(item => item !== value)
+          : [...prevState.location, value],
+      }
+    }, this.getApiJobs)
+  }
+
   updateRadioInput = value => {
     this.setState(
       prevState => ({
@@ -89,7 +107,10 @@ class Jobs extends Component {
   }
 
   clearFilters = () => {
-    this.setState({selectedSalary: '', employmentTypeList: []}, this.getApiJobs)
+    this.setState(
+      {selectedSalary: '', employmentTypeList: [], location: []},
+      this.getApiJobs,
+    )
   }
 
   retryApicall = () => {
@@ -194,6 +215,7 @@ class Jobs extends Component {
             selectedSalary={selectedSalary}
             updateCheckList={this.updateCheckList}
             updateRadioInput={this.updateRadioInput}
+            updateLocation={this.updateLocation}
           />
         </div>
       </div>

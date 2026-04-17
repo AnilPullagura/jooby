@@ -38,6 +38,28 @@ const salaryRangesList = [
     label: '40 LPA and above',
   },
 ]
+const locations = [
+  {
+    label: 'HYderabad',
+    locationId: 'HYDERABAD',
+  },
+  {
+    label: 'Banglore',
+    locationId: 'BANGLORE',
+  },
+  {
+    label: 'Chennai',
+    locationId: 'CHENNAI',
+  },
+  {
+    label: 'Delhi',
+    locationId: 'DELHI',
+  },
+  {
+    label: 'Mumbai',
+    locationId: 'MUMBAI',
+  },
+]
 
 class Filters extends Component {
   onChangeCheklist = value => {
@@ -53,6 +75,11 @@ class Filters extends Component {
   clearAllFilter = () => {
     const {clearFilters} = this.props
     clearFilters()
+  }
+
+  onchangeLocation = value => {
+    const {updateLocation} = this.props
+    updateLocation(value)
   }
 
   render() {
@@ -89,6 +116,25 @@ class Filters extends Component {
                     onClick={() => this.onchangeRaido(each.salaryRangeId)}
                     readOnly
                     value={each.salaryRangeId}
+                  />
+                  {each.label}
+                </label>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <hr />
+        <div className="checkbox-div">
+          <h1>Location</h1>
+          <ul>
+            {locations.map(each => (
+              <li>
+                <label key={each.locationId}>
+                  <input
+                    type="checkbox"
+                    value={each.locationId}
+                    checked={locations.includes(each.locationId)}
+                    onChange={() => this.onchangeLocation(each.locationId)}
                   />
                   {each.label}
                 </label>
