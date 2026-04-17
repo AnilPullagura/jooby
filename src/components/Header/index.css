@@ -1,0 +1,163 @@
+
+.header-container {
+  background-color: rgb(36, 28, 66);
+  height: 100vh;
+  padding-top: 20px;
+}
+@media (min-width: 1100px) {
+  .header-container {
+    width: 20vw;
+  }
+  .website-logo {
+    height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1050px) {
+  .header-container {
+    width: 22vw;
+  }
+  .website-logo {
+    height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header-container {
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.horizontol-line {
+  width: 100%;
+  opacity: 0.5;
+  color: gray;
+}
+.website-logo {
+  margin-left: 30px;
+}
+.log-out-section-container {
+  background-color: rgb(5, 216, 198);
+  padding: 4px;
+  width: fit-content;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+.log-out-btn {
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.log-out-icon {
+  height: 20px;
+  width: 20px;
+}
+.premium-pass-btn {
+  background-color: transparent;
+  border: 1px solid gold;
+  outline: none;
+  cursor: pointer;
+  color: gold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 4px;
+}
+.premium-icon {
+  height: 20px;
+  width: 20px;
+}
+.header-btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+.route-control-container {
+  padding-left: 30px;
+  margin-top: 40px;
+}
+.link {
+  text-decoration: none;
+}
+.home-link {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.home-link:hover {
+  color: rgb(50, 105, 176);
+}
+.about-link:hover {
+  color: rgb(50, 105, 176);
+}
+.click {
+  border-left: 2px solid rgba(138, 113, 227);
+  padding: 2px;
+  color: rgb(204, 204, 204);
+  border-radius: 9px;
+  background-color: rgba(89, 70, 157, 0.55);
+}
+.clicked {
+  border-left: 2px solid rgba(138, 113, 227);
+  padding: 2px;
+  color: rgb(204, 204, 204);
+  border-radius: 9px;
+  background-color: rgba(89, 70, 157, 0.55);
+}
+.about-link {
+  color: white;
+  font-size: 18px;
+}
+.header-mobile-view {
+  background-color: rgb(36, 28, 66);
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.sample-btn {
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+}
+.mobile-view-link-controll {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mobile-home-icon {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+.mobile-job-icon {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+.mobile-logout-icon {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+@media (min-width: 767px) {
+  .header-mobile-view {
+    display: none;
+  }
+}
+.website-logo-mobile-view {
+  height: 30px;
+}

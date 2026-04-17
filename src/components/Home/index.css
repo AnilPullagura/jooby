@@ -1,0 +1,87 @@
+
+@media (min-width: 767px) {
+  .home-container {
+    height: 100vh;
+    display: flex;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .home-view {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+    background-size: cover;
+    height: 90vh;
+    padding: 10px;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .home-heading {
+    color: white;
+    font-size: 18px;
+  }
+  .home-para {
+    color: white;
+    font-size: 16px;
+  }
+  .home-btn {
+    background-color: mediumaquamarine;
+    border-radius: 12px;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    transition-property: transform;
+    transition-duration: 100ms;
+    transition-delay: 40ms;
+  }
+}
+@media (min-width: 767px) {
+  .home-view {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+    background-size: cover;
+    width: 80vw;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+  }
+  .home-heading {
+    color: white;
+    font-size: 40px;
+  }
+  .home-content {
+    width: 60%;
+  }
+  .home-para {
+    color: white;
+    font-size: 24px;
+  }
+  .home-btn {
+    background-color: mediumaquamarine;
+    border-radius: 12px;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    transition-property: transform;
+    transition-duration: 100ms;
+    transition-delay: 40ms;
+  }
+  .home-btn:hover {
+    box-shadow: 0px 0px 16px 0px aliceblue;
+    transform: scale(1.1);
+  }
+}

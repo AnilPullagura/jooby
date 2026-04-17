@@ -1,0 +1,73 @@
+.job-item-container {
+  background-color: rgb(34, 34, 34, 0.5);
+  padding: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+  border-radius: 13px;
+}
+@media (min-width: 768px) {
+  .job-item-container {
+    backdrop-filter: blur(13px);
+  }
+}
+* {
+  font-family: 'Roboto';
+}
+.list-item {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.company-logo-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.company-logo {
+  height: 70px;
+}
+.rating-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.title {
+  color: whitesmoke;
+  font-size: 16px;
+}
+@media (min-width: 767px) {
+  .title {
+    font-size: 22px;
+  }
+}
+.star {
+  color: mediumaquamarine;
+}
+.star:hover {
+  color: aliceblue;
+}
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.location-box:hover {
+  color: mediumaquamarine;
+}
+.work-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.work-type:hover {
+  color: mediumaquamarine;
+}
+.location-work-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

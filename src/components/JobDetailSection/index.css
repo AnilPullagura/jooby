@@ -1,0 +1,155 @@
+
+@media (max-width: 767px) {
+  .detail-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .job-detail-section {
+    margin-top: 10vh;
+    padding: 10px;
+  }
+  .list-view {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .skill-list {
+    margin-left: -10px;
+  }
+  .life-view {
+    display: flex;
+    flex-direction: column;
+  }
+  .similar-job-head {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .detail-section-container {
+    display: flex;
+  }
+  .job-detail-section {
+    padding: 10px;
+    width: 80vw;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .list-view {
+    width: 30%;
+    margin: 10px;
+  }
+  .similar-job-head {
+    font-size: 22px;
+    margin-left: 40px;
+  }
+  .skill-list {
+    margin-left: -30px;
+  }
+  .life-view {
+    display: flex;
+  }
+  .similar-job-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+.loader-view-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.failure-view-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.failure-view-img {
+  height: 250px;
+}
+.job-detail-section {
+  background-image: linear-gradient(rgb(39, 28, 86), black);
+  color: whitesmoke;
+}
+.similar-jobs-container {
+  margin-top: 20px;
+}
+.detail-view-logo-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.detail-section-company-logo {
+  height: 70px;
+}
+* {
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+.star-view-img {
+  color: mediumaquamarine;
+}
+.star-view-img:hover {
+  color: aliceblue;
+}
+.location-view-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-details {
+  display: flex;
+  gap: 20px;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.view-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigate-link {
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+.navigate-link:hover {
+  color: blue;
+}
+.skill-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.skills-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.skill-img {
+  height: 40px;
+}
+.skill {
+  color: mediumaquamarine;
+}
+.description {
+  color: rgb(209, 229, 247);
+}
+.life-at-company {
+  margin-top: 20px;
+}
+.detail-section-view {
+  padding: 10px;
+}
+.list-view:hover {
+  transform: scaleY(1.1);
+}

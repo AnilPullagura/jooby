@@ -1,0 +1,23 @@
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(88, 7, 82));
+  padding: 10px;
+}
+.not-found-btn {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  outline: none;
+}
+.not-found-btn:hover {
+  box-shadow: 0px 0px 10px 1.4px rgb(163, 207, 245);
+  background-image: radial-gradient(rgb(0, 0, 0), rgb(88, 7, 82));
+  backdrop-filter: blur(3px);
+  color: rgb(134, 255, 215);
+}

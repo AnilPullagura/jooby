@@ -1,0 +1,136 @@
+
+
+@media (max-width: 767px) {
+  .job-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-container {
+    padding: 10px;
+    margin-top: 10vh;
+    background-image: linear-gradient(rgb(34, 30, 30), black);
+  }
+  .job-content-container {
+    padding: 10px;
+    min-height: 100vh;
+    order: 1;
+    background-image: linear-gradient(black, rgb(39, 28, 86));
+  }
+  .failure-img {
+    height: 200px;
+  }
+  .not-found-img {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .job-container {
+    display: flex;
+  }
+  .profile-container {
+    width: 20%;
+    padding: 10px;
+    background-image: linear-gradient(rgb(34, 30, 30), black);
+  }
+  .job-content-container {
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    scrollbar-width: none;
+    scrollbar-color: none;
+    background-image: linear-gradient(rgb(39, 28, 86), black);
+  }
+  .failure-img {
+    height: 300px;
+  }
+  .not-found-img {
+    height: 300px;
+  }
+}
+.input {
+  background-color: transparent;
+  padding: 5px;
+  outline: none;
+  width: 90%;
+  color: rgb(177, 175, 175);
+  border: none;
+}
+.input::placeholder {
+  color: rgb(177, 175, 175);
+}
+.search-icon {
+  height: 22px;
+  width: 22px;
+  color: rgb(177, 175, 175);
+}
+.search-box {
+  background-color: rgb(63, 63, 63);
+  width: 10%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
+  outline: none;
+  border: 0px;
+}
+.search-bar {
+  border: 1px solid rgb(63, 63, 63);
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+@media (min-width: 767px) {
+  .search-bar {
+    order: 1;
+  }
+}
+.job-loader-container {
+  display: flex;
+  justify-content: center;
+}
+.failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.failure-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.failure-heading {
+  color: white;
+}
+.failure-para {
+  color: whitesmoke;
+}
+.failure-btn {
+  background-color: mediumaquamarine;
+  color: white;
+  border-radius: 12px;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+  padding: 10px;
+}
+.failure-btn:hover {
+  box-shadow: 0px 0px 10px 0px aliceblue;
+}
+.not-found {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
